@@ -8,45 +8,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="wrapper">
+    <div class="wrapper">
       <header>
-        <h2>Password Generator</h2>
+        <h1>Password Generator</h1>
       </header>
-      <section class="card">
+      <div class="card">
         <div class="card-header">
-          <h1>Generate a Password</h1>
-        </div>  
-            
-                <div class="option">
-                    <label class="label">Length</label>
-                    <input type="number" id="length" min="8" max="128" value="8">
-              
-                    <label class="label">Include Uppercase</label>
-                    <input type="checkbox" id="uppercase" checked>
-                
-                    <label class="label">Include Numbers</label>
-                    <input type="checkbox" id="numbers" checked>
-                
-                    <label class="label">Include Symbols</label>
-                    <input type="checkbox" id="symbols" checked>
-                </div>
-                <div class="card-body">
-                    <textarea
-                      readonly
-                      id="password"
-                      placeholder="Your Secure Password"
-                      aria-label="Generated Password"
-                    ></textarea>
-                </div>
-                
-           
-        </section>
-        
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
-    </section>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
